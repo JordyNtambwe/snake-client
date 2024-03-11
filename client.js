@@ -15,6 +15,12 @@ const connect = function () {
   conn.setEncoding("utf8");
   conn.on("connect", () => {
     conn.write("Name: JN")
+  conn.on("connect", () => {
+    conn.write("Move: Up")
+    conn.write("Move: Down")
+    conn.write("Move: Left")
+    conn.write("Move: Right")
+  })
     console.log("Successfully connected to game server")
   })
 
