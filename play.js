@@ -18,3 +18,5 @@ const handleUserInput = function (key) {
 
 console.log("Connecting ...");
 connect();
+
+module.exports = setupInput
