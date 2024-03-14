@@ -27,8 +27,7 @@ const handleUserInput = function (key) {
   }
 }
 
+module.exports = setupInput
 
-  stdin.on("data", handleUserInput);
-  return stdin;
-
-  module.exports = setupInput
+stdin.on("data", handleUserInput);
+return stdin;
