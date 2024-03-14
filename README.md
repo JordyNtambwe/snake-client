@@ -22,9 +22,9 @@ Before you can run this client, you will need to be running the server side whic
 - Try to not hit the walls, other snakes, and your own tail or else it's game over!
 
 ## Controls
-- "w" = Moves the snake "up"
-- "a" = Moves the snake "left"
-- "s" = Moves the snake "down"
-- "d" = Moves the snake "right"
-- "i", "o", or "p" = Banter
-- Exit the game = press "CTRL + C"
+- "w" key = Up
+- "a" key = Left
+- "s" key = Down
+- "d" key = Right
+- "i", "o", or "p" key = Banter
+- Exit game = "CTRL + C"
