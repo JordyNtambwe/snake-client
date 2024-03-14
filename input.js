@@ -2,18 +2,6 @@ let connection;
 
 const setupInput = function (conn) {
   connection = conn;
-  if(key === w) {
-    console.log("Move: up")
-  }
-  if(key === a) {
-    console.log("Move: left")
-  }
-  if(key === s) {
-    console.log("Move: down")
-  }
-  if(key === d) {
-    console.log("Move: right")
-  }
 }
 
 const stdin = process.stdin;
@@ -25,8 +13,22 @@ const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
    }
-
+   if(key === w) {
+    connection.write("Move: up")
+  }
+  if(key === a) {
+    connection.write("Move: left")
+  }
+  if(key === s) {
+    connection.write("Move: down")
+  }
+  if(key === d) {
+    connection.write("Move: right")
+  }
 }
+
 
   stdin.on("data", handleUserInput);
   return stdin;
+
+  module.exports = setupInput
